@@ -1,0 +1,23 @@
+public class Main {
+
+    // Method to calculate the cube of a number
+    public int FindCube(int x) {
+        int result;
+        result = x * x * x;
+        return result;
+    }
+
+    // Method that uses FindCube and prints the result
+    public void ComputerCube() {
+        int num = 5;
+        int myResult;
+        myResult = FindCube(num);
+        System.out.println("Cube of " + num + " is " + myResult);
+    }
+
+    // Main method (entry point)
+    public static void main(String[] args) {
+        Main obj = new Main(); // Create object to call non-static methods
+        obj.ComputerCube();    // Call the method to compute and print the cube
+    }
+}
