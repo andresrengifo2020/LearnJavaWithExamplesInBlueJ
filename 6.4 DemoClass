@@ -1,0 +1,29 @@
+public class Main {
+
+    public static int FindCubeStatic(int y)
+    {
+        int result;
+        result =  y * y * y;
+        return result;
+    }
+    
+    public int FindCube(int x)
+    {
+        int result;
+        result = x * x * x;
+        return result;
+    }
+    
+    public static void main(String args[])
+    
+    {
+        int a, b;
+        Main classObject = new Main();
+        a = classObject.FindCube(4);
+        System.out.println("Non-static method result " + a);
+        
+        b = Main.FindCubeStatic(4);
+        System.out.println("Static Method result " + b);
+    }
+    
+}
